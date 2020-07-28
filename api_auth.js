@@ -30,10 +30,7 @@ uploadImage = async (files, doc) => {
   }
 };
 
-//Routes
-router.get("/", function(req, res, next) {
-  return res.send("Hello Nodejs");
-});
+
 
 router.post("/login", async (req, res) => {
   let doc = await Users.findOne({ username: req.body.username });
