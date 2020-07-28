@@ -13,7 +13,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/uploaded"));
 app.use("/api/v1", require("./api"));
-const port = 8080;
+
+
+
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log("Server is running... on port " + port);
