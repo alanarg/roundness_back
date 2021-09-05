@@ -5,7 +5,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect("mongodb+srv://Medalha:nutri@cluster0-gsxev.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true}); 
+mongoose.connect("mongodb+srv://alanarg:Kakashi51!@067@cluster0.wrfhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true}); 
 
 mongoose.connection.on('connected', function () {  
   console.log('Mongoose default connection open');
